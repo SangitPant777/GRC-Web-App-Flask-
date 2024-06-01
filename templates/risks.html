@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risks</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("/static/grc.png");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            max-width: 600px; /* Adjusted container width */
+            padding: 30px; /* Smaller padding */
+            background-color: rgba(255, 255, 255, 0.95); /* Increased opacity for better readability */
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px; /* Smaller margin */
+            color: #333;
+            font-size: 1.8rem; /* Slightly smaller font size */
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        input[type="text"] {
+            width: calc(100% - 40px); /* Adjusted width */
+            padding: 15px; /* Smaller padding */
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            box-sizing: border-box;
+            font-size: 1.1rem; /* Slightly smaller font size */
+        }
+        
+        button {
+            width: calc(100% - 40px); /* Adjusted width */
+            padding: 15px 20px; /* Smaller padding */
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1.1rem; /* Slightly smaller font size */
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><u>Risks</u></h1>
+        <form method="POST">
+            <input type="text" name="name" placeholder="Name" required><br>
+            <input type="text" name="description" placeholder="Description" required><br>
+            <input type="text" name="likelihood" placeholder="Likelihood" required><br>
+            <input type="text" name="impact" placeholder="Impact" required><br>
+            <button type="submit">Add Risk</button>
+        </form>
+    </div>
+</body>
+</html>
