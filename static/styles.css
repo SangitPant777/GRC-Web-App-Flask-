@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("/static/grc.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.flash-messages {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.flash-messages li {
+    color: red;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+}
